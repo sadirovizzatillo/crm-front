@@ -1,0 +1,125 @@
+.el-main {
+  position: relative;
+  height: calc(100vh - 77px);
+  padding: 0;
+}
+.el-pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px 16px;
+  gap: 11px;
+  width: 100%;
+  height: 68px;
+  border-top: 1px solid #EDEFF2;
+  .el-pager {
+    .number {
+      width: 40px;
+      height: 40px;
+      font-family: 'Inter-Medium', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      text-align: center;
+      letter-spacing: -0.09px;
+      color: #68707D;
+    }
+    .is-active {
+      color: #FFFFFF;
+      border-radius: 20px;
+      background: #357AF6;
+    }
+  }
+  .btn-prev .is-first {}
+  .btn-next .is-last {}
+  button {
+    width: 52px;
+    height: 40px;
+    padding: 0 16px 0 12px;
+    border-radius: 12px;
+    border: 1px solid #EDEFF2;
+    &:hover {
+      background: #357AF6;
+      .el-icon  svg path {
+        fill: #FFFFFF;
+      }
+    }
+    .el-icon {
+      display: flex!important;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      font-size: 0!important;
+      svg {
+        width: 24px;
+        height: 24px;
+      }
+      svg path {
+        fill: #357AF6;
+      }
+    }
+  }
+}
+.el-popper {
+ .logout {
+   width: 100%;
+   a {
+     display: flex;
+     align-items: center;
+     justify-content: flex-start;
+     grid-gap: 10px;
+     font-family: 'Inter-Medium', sans-serif;
+     font-style: normal;
+     font-weight: 500;
+     font-size: 14px;
+     line-height: 16px;
+     letter-spacing: -0.09px;
+     color: #68707D;
+     text-decoration: none;
+     cursor: pointer;
+     &:hover {
+       color: #d9434d;
+     }
+     svg path {
+       fill: #d9434d;
+     }
+   }
+ }
+}
+.el-button.is-disabled {
+  background: #a0cfff!important;
+}
+.is-checked {
+  .el-switch__core {
+    background: #5FA99F!important;
+  }
+}
+.el-switch {
+  .el-switch__core {
+    background: #434347;
+    border-color: transparent!important;
+    .el-switch__inner {
+      span {
+        font-family: 'Inter-Medium', sans-serif;
+        font-size: 13px;
+        font-weight: 500;
+      }
+    }
+    .el-switch__action {
+      top: 1px;
+      width: 15.5px;
+      height: 15.5px;
+    }
+  }
+}
+.el-empty {
+  width: 100%;
+  padding: 5rem;
+  p {
+    font-family: 'Inter-Regular', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+  }
+}

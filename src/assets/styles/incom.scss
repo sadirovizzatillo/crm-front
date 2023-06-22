@@ -1,0 +1,31 @@
+.incom {
+  .incom__header {
+    .el-form-item {
+      margin-bottom: 0;
+      .el-form-item__label {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        height: auto;
+        margin-bottom: 0!important;
+        font-family: 'Inter-Semibold', sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+      }
+      .el-input {
+        width: 100%;
+      }
+    }
+    .el-button {
+      @include btn;
+      width: calc(100% - 12px);
+      margin-left: 12px;
+    }
+  }
+  .incom__body {}
+  .incom__footer {
+    .el-button {
+      @include btn;
+    }
+  }
+}

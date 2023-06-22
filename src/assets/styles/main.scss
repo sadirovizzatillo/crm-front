@@ -1,0 +1,61 @@
+@import "mixins";
+@import "global";
+@import "element";
+@import "login";
+@import "forms";
+@import "sidebar";
+@import "header";
+@import "dashboard";
+@import "categories";
+@import "shops";
+@import "products";
+@import "table";
+@import "dialogs";
+@import "incom";
+@import "cash-desk";
+
+/************** Font size **************/
+// @font-face {
+//   font-family: "Inter-Bold";
+//   src: url("../fonts/Inter-Bold.ttf") format('truetype')
+// }
+// @font-face {
+//   font-family: "Inter-Semibold";
+//   src: url("../fonts/Inter-Semibold.ttf") format('truetype')
+// }
+// @font-face {
+//   font-family: "Inter-Medium";
+//   src: url("../fonts/Inter-Medium.ttf") format('truetype')
+// }
+// @font-face {
+//   font-family: "Inter-Regular";
+//   src: url("../fonts/Inter-Regular.ttf") format('truetype')
+// }
+
+/************** scroll bar **************/
+
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 10px;
+  border-radius: 8px;
+  color: #DB726F;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #2E2E32;
+  border-radius: 50px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #2E2E32;
+}

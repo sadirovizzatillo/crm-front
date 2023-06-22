@@ -1,0 +1,257 @@
+.table__header {
+  .el-select {
+    width: 100%;
+  }
+  .el-input {
+    width: 100%;
+    .el-input__wrapper {
+      height: 30px;
+      border-radius: 8px;
+      background: #FFFFFF;
+      border: 1px solid #EDEFF2;
+      box-shadow: none;
+      input {
+        font-family: 'Inter-Regular', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 1;
+        letter-spacing: -0.09px;
+        color: #141414;
+      }
+    }
+  }
+  .el-date-editor {
+    height: 30px;
+    box-shadow: none;
+    border-radius: 8px;
+    border: 1px solid #EDEFF2;
+    .el-icon svg path {
+      color: #357AF6;
+    }
+  }
+  .table__filter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 12px;
+    .search, .select__cat {
+      width: 280px;
+    }
+    .measure {
+      width: 160px;
+    }
+    .count {
+      width: 181px;
+    }
+    .dates {
+
+    }
+  }
+  .table__res {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    p {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 8px;
+      font-family: 'Inter-Regular', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: -0.09px;
+      color: #68707D;
+      margin-bottom: 0;
+      .el-select {
+        width: 65px;
+      }
+    }
+  }
+}
+.table__content {
+  margin-top: 30px;
+  border-radius: 12px;
+  border: 1px solid #EDEFF2;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  .el-table {
+    .el-checkbox {
+      .el-checkbox__input.is-checked .el-checkbox__inner, .el-checkbox__input.is-indeterminate .el-checkbox__inner {
+        background: #357AF6;
+      }
+      .el-checkbox__inner {
+        width: 20px;
+        height: 20px;
+        background: #FFFFFF;
+        border: 1px solid #EDEFF2;
+        border-radius: 6px;
+        &:before {
+          top: 8px;
+          background: #FFFFFF;
+        }
+        &:after {
+          top: 4px;
+          left: 7px;
+        }
+        &:hover {
+          border: 1px solid #8EBCF9;
+        }
+      }
+      .el-checkbox__label {
+        font-family: 'Inter-Regular', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: -0.09px;
+        color: #68707D;
+      }
+    }
+    .el-table__header-wrapper {
+      tr {
+        background: #FBFBFC;
+        .el-table__cell {
+          background: transparent;
+          font-family: 'Inter-Medium', sans-serif;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 18px;
+          letter-spacing: 0.01px;
+          color: #68707D;
+          padding: 12px 16px;
+          .cell {
+            padding: 0;
+          }
+        }
+      }
+    }
+    .el-table__body-wrapper {
+      .el-table__row {
+        .el-table__cell {
+          font-family: 'Inter-Regular', sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 20px;
+          letter-spacing: -0.09px;
+          color: #68707D;
+          padding: 16px;
+          .cell {
+            padding: 0;
+          }
+          .name {
+            font-family: 'Inter-Medium', sans-serif;
+            font-weight: 500;
+            color: #141414;
+          }
+          .units {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 2px 6px;
+            gap: 4px;
+            width: 64px;
+            height: 22px;
+            border-radius: 16px;
+            font-family: 'Inter-Semibold', sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 18px;
+            text-align: center;
+            letter-spacing: 0.01px;
+            color: #FFFFFF;
+            .dot {
+              width: 6px;
+              height: 6px;
+              background: #FFFFFF;
+              border-radius: 50%;
+            }
+          }
+          .unit--kg {
+            background: #5FA99F;
+          }
+          .unit--piece {
+            background: #9D59A7;
+          }
+          .unit--pack {
+            background: #D98C5D;
+          }
+          .unit--liter {
+            background: #CEB24A;
+          }
+          .unit--block {
+            background: #434347;
+          }
+          .user {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 12px;
+            .user__img {
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+              background: #4994EC!important;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-family: 'Inter-Medium', sans-serif;
+              font-style: normal;
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 24px;
+              text-align: center;
+              color: #FFFFFF;
+              overflow: hidden;
+              img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+          }
+        }
+      }
+    }
+    .el-table__footer-wrapper {
+      tr {
+        background: #5FA99F;
+        .el-table_1_column_1, .cell {
+          width: 100px;
+        }
+        .el-table__cell {
+          font-family: 'Inter-Semibold', sans-serif;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 20px;
+          letter-spacing: -0.09px;
+          color: #FFFFFF;
+          padding: 16px;
+          background: transparent;
+          .cell {
+            padding: 0;
+          }
+        }
+      }
+    }
+    .el-table__inner-wrapper:before {
+      display: none;
+    }
+  }
+  .cell--block {
+    background: #FBFBFC;
+    opacity: .7;
+    .user__img {
+      background: #434347!important;
+    }
+  }
+}

@@ -1,0 +1,115 @@
+.el-menu-vertical-demo:not(.el-menu--collapse) {
+  width: auto;
+}
+.el-aside {
+  width: 135px;
+  background: #2E2E32;
+  .logo {
+    text-align: center;
+    padding: 20px 4px 36px;
+  }
+  .el-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100vh;
+    padding: 0 16px 16px;
+    background: #2E2E32;
+    overflow-y: auto;
+    a {
+      line-height: 1;
+      text-decoration: none;
+    }
+    span {
+      font-family: 'Inter-Regular', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: -0.09px;
+      color: #FFFFFF;
+      opacity: 0.7;
+    }
+    .el-menu-item {
+      display: flex;
+      align-items: center;
+      padding: 12px 16px!important;
+      width: 100%;
+      border-radius: 12px;
+      background: #2E2E32;
+      backdrop-filter: blur(16px);
+      margin-bottom: 6px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      .el-icon {
+        margin-right: 10px;
+      }
+      .notification {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 2px 6px 1px;
+        width: auto;
+        height: 19px;
+        background: #DB726F;
+        border-radius: 12px 12px 12px 0;
+        margin-left: auto;
+        span {
+          font-size: 12px;
+          line-height: 16px;
+        }
+      }
+    }
+    .is-active {
+      background: #4994EC;
+      span, svg g {
+        opacity: 1;
+      }
+    }
+    .links {}
+  }
+  .el-menu--collapse {
+    width: 84px;
+    .el-menu-item {
+      width: 52px;
+      a {
+        display: none;
+      }
+      .el-icon {
+        margin-right: 0;
+        padding-right: 3px;
+      }
+      .notification {
+        position: absolute;
+        left: 36px;
+        top: 9px;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        padding: 0;
+        span {
+          display: none;
+        }
+      }
+    }
+    .minimize {
+      .minimize__item {
+        span {
+          display: none;
+        }
+      }
+    }
+  }
+  .minimize {
+    margin-top: auto;
+    padding: 12px 16px;
+    .minimize__item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      cursor: pointer;
+    }
+  }
+}

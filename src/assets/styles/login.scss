@@ -1,0 +1,60 @@
+.login {
+  width: 100%;
+  height: 100%;
+  .login__image {
+    height: 100%;
+    background-size: 100%;
+    background: #E7F1FF url("../medical-appointment-doctor-healthcare-40568.webp") no-repeat bottom left;
+    //background: #E7F1FF;
+  }
+  .login__form {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    align-items: center;
+    height: 100vh;
+    padding: 32px;
+    .logo {}
+    .copyright {
+      p {
+        font-family: 'Inter-Regular', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: -0.09px;
+        color: #68707D;
+        margin-bottom: 0;
+      }
+    }
+    .form {
+      width: 360px;
+      margin: 0 auto;
+      .form__title {
+        margin-bottom: 32px;
+        h3 {
+          font-family: 'Inter-Bold', sans-serif;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 28px;
+          letter-spacing: -0.47px;
+          color: #141414;
+          margin-bottom: 8px;
+        }
+        p {
+          font-family: 'Inter-Regular', sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 22px;
+          letter-spacing: -0.18px;
+          color: #68707D;
+          margin-bottom: 0;
+        }
+      }
+    }
+    .el-button {
+      @include btn-styles;
+    }
+  }
+}

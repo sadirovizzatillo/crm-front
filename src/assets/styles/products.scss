@@ -1,0 +1,179 @@
+.products {
+  .table__content {
+    .el-table {
+      .el-table__body-wrapper {
+        .el-table__row {
+          .el-table__cell {
+            .user {
+              .user__img {
+                background: transparent!important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.create__product {
+  .el-form-item {
+    margin-bottom: 12px;
+    .el-form-item__label {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      height: auto;
+      margin-bottom: 0!important;
+      font-family: 'Inter-Semibold', sans-serif;
+      font-weight: 600;
+      font-size: 14px;
+      width: 100px;
+    }
+    .el-input, .el-select, .el-input-number {
+      width: 100%;
+    }
+    .el-input-number__decrease, .el-input-number__increase {
+      display: none;
+    }
+    .el-input__wrapper {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 100%;
+      padding: 0;
+      box-shadow: none;
+      justify-content: flex-start;
+      height: 42px;
+      border-radius: 8px;
+      background: #FFFFFF;
+      border: 1px solid #EDEFF2;
+      overflow: hidden;
+      input {
+        height: 100%;
+        padding: 10px 14px;
+        border-radius: 8px;
+        &:focus {
+          border: 1px solid #8EBCF9;
+        }
+      }
+      .el-input__suffix {
+        position: absolute;
+        right: 14px;
+        margin-left: 0!important;
+      }
+    }
+  }
+  .product__save {
+    @include btn-styles;
+    width: 100px;
+    margin-top: 1rem;
+    margin-left: 1rem;
+  }
+  .product__table {
+    margin-top: 5rem;
+    border-radius: 12px;
+    border: 1px solid #EDEFF2;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    .el-table {
+      .el-checkbox {
+        .el-checkbox__input.is-checked .el-checkbox__inner, .el-checkbox__input.is-indeterminate .el-checkbox__inner {
+          background: #357AF6;
+        }
+        .el-checkbox__inner {
+          width: 20px;
+          height: 20px;
+          background: #FFFFFF;
+          border: 1px solid #EDEFF2;
+          border-radius: 6px;
+          &:before {
+            top: 8px;
+            background: #FFFFFF;
+          }
+          &:after {
+            top: 4px;
+            left: 7px;
+          }
+          &:hover {
+            border: 1px solid #8EBCF9;
+          }
+        }
+        .el-checkbox__label {
+          font-family: 'Inter-Regular', sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 20px;
+          letter-spacing: -0.09px;
+          color: #68707D;
+        }
+      }
+      .el-table__header-wrapper {
+        tr {
+          background: #FBFBFC;
+          .el-table__cell {
+            background: transparent;
+            font-family: 'Inter-Medium', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+            letter-spacing: 0.01px;
+            color: #68707D;
+            padding: 12px 16px;
+            .cell {
+              padding: 0;
+            }
+          }
+        }
+      }
+      .el-table__body-wrapper {
+        .el-table__row {
+          .el-table__cell {
+            font-family: 'Inter-Regular', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: -0.09px;
+            color: #68707D;
+            padding: 16px;
+            .cell {
+              padding: 0;
+            }
+            .name {
+              font-family: 'Inter-Medium', sans-serif;
+              font-weight: 500;
+              color: #141414;
+            }
+            .actions {
+              width: auto!important;
+            }
+          }
+        }
+      }
+      .el-table__footer-wrapper {
+        tr {
+          background: #5FA99F;
+          .el-table_1_column_1, .cell {
+            width: 100px;
+          }
+          .el-table__cell {
+            font-family: 'Inter-Semibold', sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: -0.09px;
+            color: #FFFFFF;
+            padding: 16px;
+            background: transparent;
+            .cell {
+              padding: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
