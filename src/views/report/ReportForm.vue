@@ -44,7 +44,7 @@
 <script setup>
 import { onMounted, reactive, ref } from 'vue'
 // import { useDoctors } from "@/store/doctors.pinia"
-// import { useToast } from "@/store/toast.pinia"
+import { useToast } from "@/store/toast.pinia"
 import router from '@/router';
 import TheComponentHeader from '@/components/TheComponentHeader.vue';
 // import Request from '@/api';
@@ -104,8 +104,10 @@ const submitForm = async (formEl) => {
         if (valid) {
             if(doctorId.value){
                 useStore().updateDoctor(ruleForm);
+                useToast().success("Muvaffaqiyatli o'zgartirildi")
             }else{
                 useStore().createDoctor({...ruleForm, id: useStore().doctors.length + 1});
+                useToast().success("Muvaffaqiyatli qo'shildi")
             }
             router.go(-1)
         } else {

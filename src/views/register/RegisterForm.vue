@@ -137,6 +137,7 @@ const submitForm = async (formEl) => {
     await formEl.validate((valid) => {
         if (valid) {
             useStore().createPatients({...ruleForm, id: useStore().patients.length + 1});
+            useToast().success("Muvaffaqiyatli qo'shildi")
             router.go(-1)
         } else {
             useToast().error("Xato malumot kiritildi")

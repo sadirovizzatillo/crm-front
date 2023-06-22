@@ -69,6 +69,7 @@
 </template>
 
 <script setup>
+import { useToast } from '@/store/toast.pinia';
 import {reactive, ref} from 'vue'
 // import {useUsers} from "@/stores/users.pinia";
 import { useRouter } from "vue-router"
@@ -82,7 +83,10 @@ const formState = reactive({
 
 const submitForm = () => {
     if(formState.username === "admin" && formState.password === "admin123"){
-        router.push({ name:"RegisterUser"})
+        router.push({ name:"RegisterUser"});
+        useToast().success("Tizimga xush kelibsiz");
+    }else{
+        useToast().error("Login parol noto'g'ri");
     }
 };
 </script>
